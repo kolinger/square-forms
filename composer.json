@@ -1,0 +1,19 @@
+{
+	"name": "kolinger/square-forms",
+	"license": ["WTFPL"],
+	"authors": [
+		{
+			"name": "Tomáš Kolinger",
+			"homepage": "http://tomas.kolinger.name"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"Square\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">= 5.4.0",
+		"nette/nette": "2.1.*"
+	}
+}
