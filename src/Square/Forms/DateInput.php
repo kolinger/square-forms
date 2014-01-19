@@ -61,7 +61,7 @@ class DateInput extends BaseControl
 	protected function generateControl($id = 'date-input')
 	{
 		$value = $this->value ? $this->value->format($this->format) : NULL;
-		return (string) parent::getControl()
+		return parent::getControl()
 			->value($value)
 			->data($id, 'true');
 	}
