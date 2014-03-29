@@ -47,8 +47,7 @@ class SelectsPresenter extends BasePresenter
 		$form = new Form();
 
 		$items = array('first item', 'second item', 'empty item');
-		$form->addSelect('main', 'Main', $items)
-			->controlPrototype->data('dependent-select', 'true');
+		$form->addSelect('main', 'Main', $items);
 
 		$form->addDependentSelect('second', 'Dependent', $form['main'], callback($this, 'loadItems'))
 			->controlPrototype->data('dependent-select', 'true');
